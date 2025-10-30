@@ -1,0 +1,234 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const strategies = [
+  {
+    title: "Bankroll Management",
+    description: "Never risk more than 2-5% of your total bankroll on a single bet",
+    icon: "💰"
+  },
+  {
+    title: "Shop for Lines",
+    description: "Compare odds across multiple sportsbooks to find the best value",
+    icon: "🔍"
+  },
+  {
+    title: "Focus on Value",
+    description: "Look for underpriced teams with strong fundamentals",
+    icon: "🎯"
+  },
+  {
+    title: "Track Your Bets",
+    description: "Maintain detailed records to identify winning patterns",
+    icon: "📊"
+  }
+];
+
+const advancedStrategies = [
+  {
+    title: "Weather Impact Analysis",
+    description: "How precipitation and wind affect passing games and totals"
+  },
+  {
+    title: "Injury Report Deep Dive",
+    description: "Key player absences that create betting opportunities"
+  },
+  {
+    title: "Line Movement Tracking",
+    description: "Using sharp money flow to predict game outcomes"
+  },
+  {
+    title: "Division Rivalry Edges",
+    description: "Historical trends in conference and division matchups"
+  }
+];
+---
+
+<Layout title="NFL Betting Strategy Guides - Expert Tips & Winning Techniques" description="Master NFL betting with our comprehensive strategy guides. Learn expert techniques, bankroll management, and advanced analytics to boost your winning potential.">
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden bg-gradient-to-br from-[#1D4ED8] via-[#1E40AF] to-[#EF4444]">
+    <div class="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-10"></div>
+    <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+      <div class="max-w-3xl">
+        <p class="text-[#BFDBFE] text-xl md:text-2xl font-medium mb-4">STRATEGY MASTERY</p>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+          NFL Betting Strategy <span class="text-[#FECACA]">Guides</span>
+        </h1>
+        <p class="text-xl text-[#E0E7FF] mb-8 max-w-2xl">
+          Your pathway to consistent profits in NFL betting starts here. Transform your approach with expert insights.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button class="bg-white text-[#1D4ED8] hover:bg-[#EFF6FF] font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Start Learning
+          </button>
+          <button class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300">
+            View All Guides
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent"></div>
+  </div>
+
+  <!-- Fundamental Strategies Section -->
+  <section class="py-20 bg-gradient-to-b from-white to-[#F9FAFB]">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <p class="text-[#1D4ED8] font-bold text-lg mb-2">CORE PRINCIPLES</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Fundamental Betting Strategies</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+          Every successful bettor starts with a solid foundation. These core principles will guide your decision-making process.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {strategies.map((strategy, index) => (
+          <div key={index} class="bg-white rounded-2xl p-6 shadow-xl border border-gray-100 hover:border-[#1D4ED8] transition-all duration-300 hover:-translate-y-2">
+            <div class="text-4xl mb-4">{strategy.icon}</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">{strategy.title}</h3>
+            <p class="text-gray-600">{strategy.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Strategies Section -->
+  <section class="py-20 bg-gradient-to-b from-[#1D4ED8] to-[#1E3A8A]">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <p class="text-[#BFDBFE] font-bold text-lg mb-2">PRO TECHNIQUES</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Advanced Betting Techniques</h2>
+        <p class="text-[#E0E7FF] max-w-2xl mx-auto text-lg">
+          Elevate your betting game with sophisticated approaches used by professional bettors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {advancedStrategies.map((strategy, index) => (
+          <div key={index} class="flex items-start bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:border-white/40 transition-all duration-300">
+            <div class="bg-[#EF4444] w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4 flex-shrink-0">
+              {index + 1}
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">{strategy.title}</h3>
+              <p class="text-[#E0E7FF]">{strategy.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bankroll Management Deep Dive -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2">
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 w-32 h-32 bg-[#1D4ED8] rounded-full opacity-10"></div>
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-[#EF4444] rounded-full opacity-10"></div>
+            <div class="relative bg-gradient-to-br from-[#1D4ED8] to-[#3B82F6] rounded-3xl p-8 text-white shadow-2xl">
+              <h3 class="text-2xl font-bold mb-4">The 2-5% Rule</h3>
+              <p class="mb-6 text-lg">
+                Never risk more than 2-5% of your total bankroll on a single bet. This protects you from devastating losses while allowing for sustainable growth.
+              </p>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                  <p class="text-2xl font-bold">$1000</p>
+                  <p class="text-sm opacity-80">Bankroll</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                  <p class="text-2xl font-bold">$20-50</p>
+                  <p class="text-sm opacity-80">Per Bet</p>
+                </div>
+                <div class="bg-white/20 rounded-xl p-4 text-center">
+                  <p class="text-2xl font-bold">2-5%</p>
+                  <p class="text-sm opacity-80">Risk Level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2">
+          <p class="text-[#1D4ED8] font-bold text-lg mb-2">BANKROLL EXPERTISE</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Master Your Money Management</h2>
+          <p class="text-gray-600 text-lg mb-6">
+            The difference between amateur and professional bettors lies in disciplined bankroll management. Our experts reveal how to protect your funds while maximizing growth potential.
+          </p>
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start">
+              <div class="bg-[#1D4ED8] rounded-full p-1 mt-1 mr-3">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span class="text-gray-700">Establish separate betting accounts for different bankrolls</span>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-[#1D4ED8] rounded-full p-1 mt-1 mr-3">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span class="text-gray-700">Use unit betting systems to standardize stake sizes</span>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-[#1D4ED8] rounded-full p-1 mt-1 mr-3">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span class="text-gray-700">Implement stop-loss limits to prevent emotional decisions</span>
+            </li>
+            <li class="flex items-start">
+              <div class="bg-[#1D4ED8] rounded-full p-1 mt-1 mr-3">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              </div>
+              <span class="text-gray-700">Reinvest winnings gradually to accelerate growth</span>
+            </li>
+          </ul>
+          <button class="bg-[#1D4ED8] hover:bg-[#2563EB] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+            Download Bankroll Tracker
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-20 bg-gradient-to-r from-[#1D4ED8] to-[#3B82F6]">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="text-white">
+          <div class="text-5xl md:text-6xl font-bold mb-2">87%</div>
+          <p class="text-[#BFDBFE]">Win Rate Improvement</p>
+        </div>
+        <div class="text-white">
+          <div class="text-5xl md:text-6xl font-bold mb-2">3.2x</div>
+          <p class="text-[#BFDBFE]">ROI Increase</p>
+        </div>
+        <div class="text-white">
+          <div class="text-5xl md:text-6xl font-bold mb-2">94%</div>
+          <p class="text-[#BFDBFE]">Client Retention</p>
+        </div>
+        <div class="text-white">
+          <div class="text-5xl md:text-6xl font-bold mb-2">4.8★</div>
+          <p class="text-[#BFDBFE]">Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-[#1E3A8A] to-[#0F172A]">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Transform Your Betting Game?</h2>
+      <p class="text-xl text-[#E0E7FF] max-w-2xl mx-auto mb-10">
+        Join thousands of bettors who have elevated their NFL betting strategy with our proven techniques.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <button class="bg-[#EF4444] hover:bg-[#F87171] text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Get Premium Access
+        </button>
+        <button class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-4 px-10 rounded-full text-lg transition-all duration-300">
+          Free Strategy Guide
+        </button>
+      </div>
+    </div>
+  </section>
+</Layout>
