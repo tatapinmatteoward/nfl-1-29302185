@@ -1,0 +1,290 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const features = [
+  {
+    title: "Expert Analysis",
+    description: "Professional-grade betting insights from seasoned analysts",
+    icon: "🔍"
+  },
+  {
+    title: "Winning Strategies",
+    description: "Proven systems and methodologies that deliver results",
+    icon: "🎯"
+  },
+  {
+    title: "Real-Time Updates",
+    description: "Latest injury reports, weather impacts, and line movements",
+    icon: "⚡"
+  },
+  {
+    title: "Bankroll Management",
+    description: "Smart money management techniques to maximize profits",
+    icon: "💰"
+  }
+];
+
+const stats = [
+  { value: "92%", label: "Win Rate" },
+  { value: "$2.4M", label: "In Winnings" },
+  { value: "15K+", label: "Members" },
+  { value: "24/7", label: "Support" }
+];
+---
+
+<Layout title="NFL Betting Pros - Your Ultimate Guide to NFL Betting Success" description="Master NFL betting with expert insights, predictions, and strategies from the pros. Win more with our comprehensive betting guides.">
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden bg-gradient-to-br from-[#1D4ED8] via-[#2563EB] to-[#3B82F6]">
+    <div class="absolute inset-0 bg-grid-white/[0.05] bg-[length:20px_20px]"></div>
+    <div class="relative container mx-auto px-4 py-24 md:py-32">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left">
+          <span class="inline-block bg-[#EF4444]/20 text-[#FEE2E2] px-4 py-1 rounded-full text-sm font-medium mb-4 animate-pulse">
+            PRO BETTING INSIGHTS
+          </span>
+          <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+            NFL Betting <span class="text-[#FECACA]">Pros</span>
+          </h1>
+          <p class="text-xl text-blue-100 mb-8 max-w-2xl">
+            Your Ultimate Guide to NFL Betting Success
+          </p>
+          <p class="text-lg text-blue-200 mb-10 max-w-2xl">
+            Master the game, master your bets. Professional insights, winning strategies, and expert analysis to dominate the NFL betting landscape.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#get-started" class="bg-[#EF4444] hover:bg-[#DC2626] text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Start Winning Now
+            </a>
+            <a href="#insights" class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300">
+              View Insights
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="relative z-10 bg-gradient-to-br from-[#1E3A8A] to-[#3730A3] rounded-2xl p-8 shadow-2xl border border-blue-400/30">
+            <div class="flex justify-between items-center mb-6">
+              <div class="text-white">
+                <p class="text-sm opacity-80">Today's Pick</p>
+                <p class="font-bold text-xl">Kansas City Chiefs</p>
+              </div>
+              <div class="bg-[#EF4444] text-white py-1 px-3 rounded-full text-sm font-bold">
+                -7.5
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center pb-3 border-b border-blue-400/20">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                    <span class="font-bold">KC</span>
+                  </div>
+                  <span class="text-white font-medium">Chiefs</span>
+                </div>
+                <span class="text-white font-bold">58%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                    <span class="font-bold">LV</span>
+                  </div>
+                  <span class="text-white font-medium">Raiders</span>
+                </div>
+                <span class="text-white font-bold">42%</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-blue-400/20">
+              <p class="text-green-400 font-bold text-center">RECOMMENDED PLAY: UNDER 48.5 POINTS</p>
+            </div>
+          </div>
+          <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#FECACA] rounded-full opacity-20 blur-xl"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-[#BFDBFE] rounded-full opacity-20 blur-xl"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        {stats.map((stat) => (
+          <div class="text-center">
+            <div class="text-4xl md:text-5xl font-extrabold text-[#1D4ED8] mb-2">{stat.value}</div>
+            <div class="text-gray-600 font-medium uppercase tracking-wider text-sm">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Why Choose NFL Betting Pros?</h2>
+        <p class="text-xl text-gray-600">
+          We provide everything you need to transform from casual fan to betting champion
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {features.map((feature, index) => (
+          <div class="bg-white rounded-2xl p-6 shadow-xl border border-gray-100 hover:border-[#1D4ED8] transition-all duration-300 hover:-translate-y-2 group">
+            <div class="w-14 h-14 rounded-xl bg-[#1D4ED8]/10 flex items-center justify-center text-2xl mb-6 group-hover:bg-[#1D4ED8] group-hover:text-white transition-all duration-300">
+              {feature.icon}
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+            <p class="text-gray-600">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Betting Insights Section -->
+  <section id="insights" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">🔥 Featured Betting Insights</h2>
+        <p class="text-xl text-gray-600">
+          Data-driven analysis to give you the competitive edge
+        </p>
+      </div>
+      
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div class="md:flex">
+          <div class="md:w-2/5 bg-gradient-to-br from-[#1D4ED8] to-[#2563EB] p-8 md:p-12 text-white">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 rounded-full bg-[#EF4444] flex items-center justify-center text-xl mr-4">
+                📊
+              </div>
+              <h3 class="text-2xl font-bold">Statistical Edge</h3>
+            </div>
+            <p class="mb-6 text-blue-100">
+              Our proprietary analytics engine processes over 50 data points per game to identify profitable opportunities missed by casual bettors.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-[#FECACA] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Advanced DVOA metrics analysis
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-[#FECACA] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Weather impact modeling
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-[#FECACA] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Injury correlation tracking
+              </li>
+              <li class="flex items-center">
+                <svg class="w-5 h-5 text-[#FECACA] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Rest and travel impact factors
+              </li>
+            </ul>
+            <div class="pt-4 border-t border-blue-400/30">
+              <p class="font-bold text-xl">Current Model Accuracy: <span class="text-[#FECACA]">68.4%</span></p>
+            </div>
+          </div>
+          <div class="md:w-3/5 p-8 md:p-12">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Weekly Performance Tracker</h3>
+            
+            <div class="space-y-6">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Spread Bets</span>
+                  <span class="font-bold text-[#1D4ED8]">64.2% Win Rate</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-[#1D4ED8] h-3 rounded-full" style="width: 64.2%"></div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Over/Under Bets</span>
+                  <span class="font-bold text-[#1D4ED8]">71.8% Win Rate</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-[#1D4ED8] h-3 rounded-full" style="width: 71.8%"></div>
+                </div>
+              </div>
+              
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-medium">Moneyline Bets</span>
+                  <span class="font-bold text-[#1D4ED8]">61.5% Win Rate</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div class="bg-[#1D4ED8] h-3 rounded-full" style="width: 61.5%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-10 p-6 bg-[#F9FAFB] rounded-xl border border-gray-200">
+              <h4 class="font-bold text-lg text-gray-900 mb-3">This Week's Top Plays</h4>
+              <ul class="space-y-3">
+                <li class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <div>
+                    <span class="font-medium">Buffalo Bills +3.5</span>
+                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">STRONG BUY</span>
+                  </div>
+                  <span class="font-bold text-green-600">78% Confidence</span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <div>
+                    <span class="font-medium">Over 47.5 Points</span>
+                    <span class="ml-2 px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">MODERATE</span>
+                  </div>
+                  <span class="font-bold text-yellow-600">62% Confidence</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <div>
+                    <span class="font-medium">Green Bay Packers ML</span>
+                    <span class="ml-2 px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">RISKY</span>
+                  </div>
+                  <span class="font-bold text-red-600">45% Confidence</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="get-started" class="py-20 bg-gradient-to-r from-[#1D4ED8] to-[#2563EB]">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Ready to Dominate NFL Betting?</h2>
+        <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          Join thousands of successful bettors who trust NFL Betting Pros for their winning edge
+        </p>
+        
+        <div class="bg-white rounded-2xl p-8 shadow-2xl max-w-2xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="border border-gray-200 rounded-xl p-5 text-center">
+              <div class="text-3xl font-bold text-[#1D4ED8] mb-2">3 DAYS</div>
+              <div class="text-gray-600">Free Trial</div>
+            </div>
+            <div class="border border-gray-200 rounded-xl p-5 text-center">
+              <div class="text-3xl font-bold text-[#1D4ED8] mb-2">$29</div>
+              <div class="text-gray-600">Per Month</div>
+            </div>
+            <div class="border border-gray-200 rounded-xl p-5 text-center">
+              <div class="text-3xl font-bold text-[#1D4ED8] mb-2">$249</div>
+              <div class="text-gray-600">Annual Plan</div>
+            </div>
+          </div>
+          
+          <a href="#" class="block bg-[#EF4444] hover:bg-[#DC2626] text-white font-bold py-5 px-8 rounded-xl text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl">
+            Start Your Free Trial Today
+          </a>
+          
+          <p class="text-gray-500 text-sm mt-4">
+            No credit card required • Cancel anytime
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
