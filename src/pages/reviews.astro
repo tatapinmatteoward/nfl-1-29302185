@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Casino Reviews & Ratings" description="Detailed, unbiased reviews of premium online casinos. Our expert team evaluates security, game selection, bonuses, and user experience to help you make informed gaming decisions.">
+  
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden bg-gray-900">
+    <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+    <div class="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-20"></div>
+    <div class="container mx-auto px-4 py-24 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+          Expert Casino Reviews & Ratings
+        </h1>
+        <p class="text-xl text-gray-300 leading-relaxed">
+          Make informed gaming decisions with our comprehensive, unbiased casino evaluations
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Process Section -->
+  <section class="bg-gray-900 py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-primary mb-12 text-center">Our Review Process</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              icon: "🔒",
+              title: "Security & Licensing",
+              description: "We verify legitimate operations and player protection measures"
+            },
+            {
+              icon: "🎮",
+              title: "Game Selection",
+              description: "Assessment of game variety, quality, and software providers"
+            },
+            {
+              icon: "💳",
+              title: "Payment Methods",
+              description: "Evaluation of deposit/withdrawal options and processing times"
+            },
+            {
+              icon: "🎯",
+              title: "User Experience",
+              description: "Analysis of interface design and mobile compatibility"
+            },
+            {
+              icon: "🎁",
+              title: "Bonuses & Promotions",
+              description: "Review of bonus terms, wagering requirements and value"
+            },
+            {
+              icon: "💬",
+              title: "Customer Support",
+              description: "Testing of response times and service quality"
+            }
+          ].map(item => (
+            <div class="bg-gray-800 p-8 rounded-lg border border-primary/20 hover:border-primary/40 transition-colors">
+              <div class="text-4xl mb-4">{item.icon}</div>
+              <h3 class="text-xl font-bold text-white mb-3">{item.title}</h3>
+              <p class="text-gray-400">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rating System -->
+  <section class="bg-gradient-to-b from-gray-900 to-black py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-primary mb-12 text-center">Rating System</h2>
+        
+        <div class="space-y-6">
+          {[
+            { stars: "⭐⭐⭐⭐⭐", label: "Exceptional", bg: "bg-primary/10" },
+            { stars: "⭐⭐⭐⭐", label: "Excellent", bg: "bg-primary/8" },
+            { stars: "⭐⭐⭐", label: "Good", bg: "bg-primary/6" },
+            { stars: "⭐⭐", label: "Fair", bg: "bg-primary/4" },
+            { stars: "⭐", label: "Poor", bg: "bg-primary/2" }
+          ].map(rating => (
+            <div class={`${rating.bg} p-6 rounded-lg border border-primary/10 backdrop-blur-sm`}>
+              <div class="flex items-center justify-between">
+                <div class="text-2xl">{rating.stars}</div>
+                <div class="text-xl font-medium text-white">{rating.label}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-black py-20">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-block p-px bg-gradient-to-r from-primary via-accent to-primary rounded-xl">
+          <div class="bg-gray-900 rounded-xl px-8 py-12">
+            <h2 class="text-3xl font-bold text-white mb-4">
+              Ready to Find Your Perfect Casino?
+            </h2>
+            <p class="text-gray-400 mb-8">
+              Explore our detailed reviews and make an informed choice for your gaming journey
+            </p>
+            <a href="/casinos" class="inline-block bg-primary hover:bg-primary/90 text-black font-bold px-8 py-4 rounded-lg transition-colors">
+              View All Casino Reviews
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
